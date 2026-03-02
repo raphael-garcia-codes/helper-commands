@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  redis:
+    image: redis:6.0.7
+    container_name: redis
+    restart: always
+    volumes:
+      - /c/Neon/08.Docker/Redis/:/data
+    ports:
+      - 6379:6379
+    networks:
+      - my_network
+networks:
+  my_network:
+    driver: bridge
