@@ -258,3 +258,65 @@ git help <<comando>>
 
 ## Observação Final
 Este arquivo pode ser usado como **material de estudo**, **consulta rápida** ou **base para documentação interna** em projetos versionados com Git.
+
+
+ARQUIVOS ATALHOS:
+nano ~/.bashrc
+source ~/.bashrc
+
+
+
+
+COMANDOS GIT:
+
+Aqui estão alguns comandos básicos do Git que são essenciais para o gerenciamento de repositórios:
+
+1. __Configuração Inicial:__
+- `git config --global user.name "Seu Nome"`: Define o nome de usuário global.
+- `git config --global user.email "seuemail@exemplo.com"`: Define o e-mail global.
+
+2. __Criação e Inicialização de Repositório:__
+- `git init`: Inicializa um novo repositório Git.
+- `git clone <url>`: Clona um repositório existente a partir de uma URL.
+
+3. __Status e Logs:__
+- `git status`: Mostra o status das alterações no repositório.
+- `git log`: Exibe o histórico de commits.
+
+4. __Adicionando e Confirmando Alterações:__
+- `git add <arquivo>`: Adiciona um arquivo específico ao índice.
+- `git add .`: Adiciona todas as alterações no diretório atual.
+- `git commit -m "mensagem do commit"`: Confirma as alterações com uma mensagem.
+
+5. __Branching e Merging:__
+- `git branch`: Lista todas as branches.
+- `git branch <nome-da-branch>`: Cria uma nova branch.
+- `git checkout <nome-da-branch>`: Muda para a branch especificada.
+- `git merge <nome-da-branch>`: Mescla a branch especificada na branch atual.
+
+6. __Atualização e Sincronização:__
+- `git pull`: Atualiza o repositório local com as alterações do repositório remoto.
+- `git push`: Envia as alterações locais para o repositório remoto.
+
+7. __Revertendo Alterações:__
+- `git reset <arquivo>`: Remove o arquivo do índice, mas mantém as alterações no diretório de trabalho.
+- `git checkout -- <arquivo>`: Desfaz alterações no arquivo no diretório de trabalho.
+
+Esses comandos cobrem as operações básicas que você precisará para começar a usar o Git de forma eficaz.
+
+
+git branch
+git checkout main
+git restore .
+git pull origin main
+git checkout -b <<<nome-da-sua-nova-feature>>>
+git add .
+git commit -m "Explicação breve do que foi feito"
+git push origin <<<nome-da-sua-nova-feature>>>
+
+
+
+git fetch origin
+git reset --hard origin/main
+git clean -fd
+git checkout -b <<<nome-da-sua-nova-feature>>>
